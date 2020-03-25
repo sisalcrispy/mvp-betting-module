@@ -1,6 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-
-export default App;
+class Fancy extends React.Component {
+    render() {
+        return (
+            <div>This is so Fancy!</div>
+        );
+    }
+}
+export default Fancy;
