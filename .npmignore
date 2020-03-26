@@ -1,6 +1,4 @@
 src
-.babelrc
-config-overrides.js
-public
+webpack.config.js
 node_modules
 .idea
