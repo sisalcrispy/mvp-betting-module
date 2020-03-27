@@ -2,6 +2,16 @@
 
 ## Git-flow usage
 
+* To install git-flow
+
+MacOs:
+
+      brew install git-flow
+
+Debian-based:
+
+      sudo apt install git-flow
+
 ### Creating feature/release/hotfix/support branches
 
 * To list/start/finish feature branches, use:
