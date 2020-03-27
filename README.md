@@ -6,11 +6,11 @@
 
 MacOs:
 
-      brew install git-flow
+    brew install git-flow
 
 Debian-based:
 
-      sudo apt install git-flow
+    sudo apt install git-flow
 
 ### Creating feature/release/hotfix/support branches
 
@@ -25,7 +25,7 @@ Debian-based:
 * To push/pull a feature branch to the remote repository, use:
 
   		git flow feature publish <name>
-		  git flow feature pull <remote> <name>
+		git flow feature pull <remote> <name>
 
 * To list/start/finish release branches, use:
   
