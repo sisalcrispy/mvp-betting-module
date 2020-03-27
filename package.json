@@ -2,21 +2,41 @@
   "name": "sisal-bet-module",
   "version": "0.3.2",
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@types/babel-core": "^6.25.6",
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/react": "^16.9.25",
     "@types/react-dom": "^16.9.5",
-    "typescript": "^3.8.3",
-    "ts-loader": "^6.2.2",
-    "source-map-loader": "^0.2.4",
-    "@babel/core": "^7.9.0",
+    "@typescript-eslint/eslint-plugin": "2.25.0",
+    "@typescript-eslint/parser": "2.25.0",
+    "babel-eslint": "10.1.0",
     "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-config-airbnb-typescript": "7.2.0",
+    "eslint-config-prettier": "6.10.1",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-import-resolver-typescript": "2.0.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-flowtype": "4.7.0",
+    "eslint-plugin-import": "2.20.1",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.19.0",
+    "eslint-plugin-react-hooks": "2.5.1",
     "node-sass": "^4.13.1",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.20.1",
     "path": "^0.12.7",
+    "sass-loader": "^8.0.2",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.2",
+    "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
@@ -25,6 +45,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "eslint --ext .js,.jsx,.ts,.tsx src"
   }
 }
