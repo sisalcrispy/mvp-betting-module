@@ -2,6 +2,16 @@
 
 ## Git-flow usage
 
+* To install git-flow
+
+MacOs:
+
+    brew install git-flow
+
+Debian-based:
+
+    sudo apt install git-flow
+
 ### Creating feature/release/hotfix/support branches
 
 * To list/start/finish feature branches, use:
@@ -15,7 +25,7 @@
 * To push/pull a feature branch to the remote repository, use:
 
   		git flow feature publish <name>
-		  git flow feature pull <remote> <name>
+		git flow feature pull <remote> <name>
 
 * To list/start/finish release branches, use:
   
