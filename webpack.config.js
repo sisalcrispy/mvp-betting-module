@@ -1,5 +1,4 @@
 const path = require("path");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const PortfinderSync = require('portfinder-sync');
 
@@ -55,6 +54,16 @@ const externals = {
     }
 };
 
+const plugins = {
+    dev:[
+        new HtmlWebPackPlugin({
+            template: path.resolve(__dirname, 'public/index.html'),
+            filename: 'index.html'
+        })
+    ],
+    prod : []
+};
+
 /*
 | -------------------------------------------------------
 | Dev server configuration:
@@ -82,9 +91,12 @@ module.exports = (env, argv) => {
                 {
                     test: /\.s?css$/,
                     use: [
-                        isDev ? styleLoader : MiniCssExtractPlugin.loader,
+                        "to-string-loader",
+                        styleLoader,
+                        // MiniCssExtractPlugin.loader,
                         cssLoader,
-                        sassLoader
+                        sassLoader,
+                        "postcss-loader"
                     ]
                 }
             ]
@@ -94,14 +106,7 @@ module.exports = (env, argv) => {
         externals: isDev ? externals.dev : externals.prod,
         devServer: devServer,
         plugins: [
-            new MiniCssExtractPlugin({
-                filename: isDev ? '[name].css' : '[name].[hash].css',
-                chunkFilename: isDev ? '[id].css' : '[id].[hash].css'
-            }),
-            new HtmlWebPackPlugin({
-                template: path.resolve(__dirname, 'public/index.html'),
-                filename: 'index.html'
-            })
-        ]
+            ...(isDev ? plugins.dev : plugins.prod)
+        ],
     });
 };
