@@ -1,3 +1,14 @@
+$background-grey: #f9ff7d;
+
 body {
-  background: rgba($red, 0.3);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.3rem;
+  background-color: $background-grey;
+  color: blue;
+}
+
+.App {
+  font-size: 35px;
+  color: red;
 }
