@@ -1,13 +1,33 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
     "module": "commonjs",
-    "declaration": true,
-    "outDir": "./dist",
+    "jsx": "react",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "jsx": "react"
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // "noEmit": true,
+    "removeComments": true
   },
   "include": [
-    "src"
+    "./src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    // TODO: add .test.js
   ]
 }
