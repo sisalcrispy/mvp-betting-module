@@ -1,7 +1,21 @@
-import * as React from 'react';
+import React from 'react';
+import Sisal from "sisal-mvp-betting-library";
+import context from "../context/context/context";
+import Bet from "./Bet/bet.component";
+import {BrowserRouter} from "react-router-dom";
+import '../../node_modules/sisal-mvp-betting-library/dist/styles/main.scss';
 
-import './app.component.scss';
+const {ContextProvider} = Sisal.Store();
+const {LanguagePack} = Sisal.Translations();
 
-const App = () : JSX.Element => <div className="App"> Freestyle react works!! </div>;
+const App = () => (
+    <LanguagePack languagePack={'module'}>
+        <ContextProvider context={context}>
+            <BrowserRouter>
+                <Bet />
+            </BrowserRouter>
+        </ContextProvider>
+    </LanguagePack>
+);
 
 export default App;

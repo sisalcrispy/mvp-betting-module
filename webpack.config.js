@@ -50,7 +50,8 @@ const output = {
 const externals = {
     dev: {},
     prod: {
-        "react": "react"
+        "react": "react",
+        "bootstrap": "bootstrap"
     }
 };
 
@@ -93,10 +94,8 @@ module.exports = (env, argv) => {
                     use: [
                         "to-string-loader",
                         styleLoader,
-                        // MiniCssExtractPlugin.loader,
                         cssLoader,
                         sassLoader,
-                        "postcss-loader"
                     ]
                 }
             ]
