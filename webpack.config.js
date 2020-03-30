@@ -16,7 +16,7 @@ module.exports =  (env, argv) => {
         }, {
           test: /\.(js|jsx)$/,
           exclude: /(node_modules)/,
-          loader: "babel-loader",
+          loader: "babel-loader", // TOCHECK: to remove the compiler
         },
         {
           test: /\.module\.s(a|c)ss$/,
