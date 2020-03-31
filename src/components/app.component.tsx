@@ -8,14 +8,17 @@ import '../../node_modules/sisal-mvp-betting-library/dist/styles/main.scss';
 const {ContextProvider} = Sisal.Store();
 const {LanguagePack} = Sisal.Translations();
 
-const App = () => (
-    <LanguagePack languagePack={'module'}>
-        <ContextProvider context={context}>
-            <BrowserRouter>
-                <Bet />
-            </BrowserRouter>
-        </ContextProvider>
-    </LanguagePack>
-);
+const App = (props: any) => {
+    console.log(props);
+    return (
+        <LanguagePack languagePack={'module'}>
+            <ContextProvider context={context}>
+                <BrowserRouter>
+                    <Bet />
+                </BrowserRouter>
+            </ContextProvider>
+        </LanguagePack>
+    );
+};
 
 export default App;

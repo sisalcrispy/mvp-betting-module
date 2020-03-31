@@ -1,6 +1,7 @@
 import React, {useContext} from 'react';
 import context from "../../context/context/context";
 import { Link } from 'react-router-dom';
+import './bet.component.scss';
 
 const Bet = () => {
   const {state} = useContext(context);
@@ -26,7 +27,7 @@ const Bet = () => {
           <div className="col-md-8 offset-md-2">
             <div className="card">
               <div className="p-4">
-                {t('you_are_in_the_module')}
+                {t('you_are_in_the_module')}.
               </div>
             </div>
           </div>
