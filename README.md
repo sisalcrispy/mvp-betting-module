@@ -9,7 +9,7 @@ Questo è poi pubblicato come pacchetto npm e reimportabile da altri progetti.
 Il modulo inoltre ha un suo ambiente di sviluppo (npm run start), con dev-server configurato e loader webpack.
 
 
-###Specifiche tecniche:
+### Specifiche tecniche:
 - React: 16.13.0
 - Hooks: attivi
 - Linguaggio: Typescript
@@ -18,7 +18,7 @@ Il modulo inoltre ha un suo ambiente di sviluppo (npm run start), con dev-server
 
 
 
-###Configurazioni pre-esistenti:
+### Configurazioni pre-esistenti:
 Il modulo ha già un suo context dentro la cartella ```src/context```. 
 Da lì si può partire per aggiungere proprietà dello stato, actions e mutations (vd. documentazione della libreria).
 
