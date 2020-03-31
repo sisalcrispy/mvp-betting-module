@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import context from "../../context/context/context";
+import context from "../../context/context";
 import './bet.component.scss';
 
 const Bet = () => {

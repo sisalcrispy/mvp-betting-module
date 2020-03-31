@@ -1,6 +1,6 @@
 import React from 'react';
 import Sisal from "sisal-mvp-betting-library";
-import context from "../context/context/context";
+import context from "../context/context";
 import Bet from "./Bet/bet.component";
 import {BrowserRouter} from "react-router-dom";
 import '../../node_modules/sisal-mvp-betting-library/dist/styles/main.scss';
