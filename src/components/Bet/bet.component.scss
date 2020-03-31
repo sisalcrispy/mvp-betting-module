@@ -1,0 +1,9 @@
+@import '~sisal-mvp-betting-library/dist/styles/config';
+
+#bet-component{
+  .green-square{
+    width: 1rem;
+    height: 1rem;
+    background: $sisal-dark-green;
+  }
+}
