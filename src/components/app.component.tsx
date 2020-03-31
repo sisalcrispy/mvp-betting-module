@@ -9,9 +9,9 @@ const {ContextProvider} = Sisal.Store();
 const {LanguagePack} = Sisal.Translations();
 
 const App = (props: any) => {
-    console.log(props);
+    const {language} = props;
     return (
-        <LanguagePack languagePack={'module'}>
+        <LanguagePack languagePack={'module'} language={language}>
             <ContextProvider context={context}>
                 <BrowserRouter>
                     <Bet />

@@ -1,6 +1,5 @@
 import React, {useContext} from 'react';
 import context from "../../context/context/context";
-import { Link } from 'react-router-dom';
 import './bet.component.scss';
 
 const Bet = () => {
@@ -10,24 +9,18 @@ const Bet = () => {
   return (
       <div className="container" id="bet-component">
         <div className="row">
-          <div className="col-md-8 offset-2 mt-3">
-            <nav aria-label="breadcrumb">
-              <ol className="breadcrumb">
-                <li className="breadcrumb-item">
-                  <Link to="/">
-                    {t('back')}
-                  </Link>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">{t('module')}</li>
-              </ol>
-            </nav>
+          <div className="col-md-5 offset-2 mt-3 mb-3">
+            <h1>{t('module')}</h1>
           </div>
-        </div>
-        <div className="row">
           <div className="col-md-8 offset-md-2">
             <div className="card">
               <div className="p-4">
-                {t('you_are_in_the_module')}.
+                {t('you_are_in_the_module')}!
+                <br/>
+                {t('services_are_libraries')}
+                <hr/>
+                  {t('examples')}: <br/>
+                {t('this_green_is_global')}: <div className={'green-square'} />
               </div>
             </div>
           </div>
