@@ -1,44 +1,30 @@
-# External module: betting
+# MVP nuovo terminale betting - Backbone modulo
 
-## Git-flow usage
+### Descrizione:
 
-* To install git-flow
+Questo è il backbone dei moduli di cui sarà fatta l'applicazione.
+L'export genera un normale componente react, ma invece di attaccarlo ad un index esporta il tutto come modulo.
+Questo è poi pubblicato come pacchetto npm e reimportabile da altri progetti.
 
-MacOs:
+Il modulo inoltre ha un suo ambiente di sviluppo (npm run start), con dev-server configurato e loader webpack.
 
-    brew install git-flow
 
-Debian-based:
+###Specifiche tecniche:
+- React: 16.13.0
+- Hooks: attivi
+- Linguaggio: Typescript
+- Linter: Airbnb
+- Test: Jest + Enzyme (non del tutto funzionanti, ma configurati)
 
-    sudo apt install git-flow
 
-### Creating feature/release/hotfix/support branches
 
-* To list/start/finish feature branches, use:
-  
-  		git flow feature
-  		git flow feature start <name> [<base>]
-  		git flow feature finish <name>
-  
-  For feature branches, the `<base>` arg must be a commit on `develop`.
+###Configurazioni pre-esistenti:
+Il modulo ha già un suo context dentro la cartella ```src/context```. 
+Da lì si può partire per aggiungere proprietà dello stato, actions e mutations (vd. documentazione della libreria).
 
-* To push/pull a feature branch to the remote repository, use:
+Inoltre è già configurato anche il context e il servizio di internazionalizzazione.
 
-  		git flow feature publish <name>
-		git flow feature pull <remote> <name>
 
-* To list/start/finish release branches, use:
-  
-  		git flow release
-  		git flow release start <release> [<base>]
-  		git flow release finish <release>
-  
-  For release branches, the `<base>` arg must be a commit on `develop`.
-  
-* To list/start/finish hotfix branches, use:
-  
-  		git flow hotfix
-  		git flow hotfix start <release> [<base>]
-  		git flow hotfix finish <release>
-  
-  For hotfix branches, the `<base>` arg must be a commit on `master`.
+### Contenuti:
+Il modulo dovrebbe implementare funzionalità specifiche dell'applicazione. Al momento quindi non fa nulla di rilevante.
+Si limita a mostrare un messaggio di corretto funzionamento.
